@@ -16,7 +16,7 @@ An API endpoint that receives a shopping cart with items and campaigns, then cal
 1. **Clone the repository:**
 
    ```bash
-    https://github.com/Finn-Fastest/itemCartDiscountCal.git
+   git clone https://github.com/Finn-Fastest/itemCartDiscountCal.git
    cd itemCartDiscountCal
    ```
 
