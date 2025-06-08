@@ -108,6 +108,11 @@ price-calculation-api/
 ├── index.js                 # Express server with /calculate-price route
 ├── validators/
 │   └── cartValidation.js    # Joi schema for request validation
+├── collection
+│   └── discount_service.js  # controller on first layer
+├── service
+│   └── cart.js              # service contain business logic or handler event
+├── middleware               # contain middlewares
 ├── README.md
 ├── package.json
 ```
