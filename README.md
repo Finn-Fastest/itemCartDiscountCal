@@ -16,7 +16,7 @@ An API endpoint that receives a shopping cart with items and campaigns, then cal
 1. **Clone the repository:**
 
    ```bash
-   `git clone https://github.com/yourusername/price-calculation-api.git`
+   git clone https://github.com/yourusername/price-calculation-api.git
    cd price-calculation-api
    ```
 
