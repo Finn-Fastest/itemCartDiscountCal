@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "059f4d7f-23b4-4bb0-8b4f-db44cd294e92",
+		"name": "Discount API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36278635"
+	},
+	"item": [
+		{
+			"name": "POST /calculate-price",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cartItems\": [\n    {\n      \"name\": \"T-Shirt\",\n      \"category\": \"Clothing\",\n      \"price\": 350\n    },\n    {\n      \"name\": \"Hoodie\",\n      \"category\": \"Clothing\",\n      \"price\": 700\n    },\n    {\n      \"name\": \"Watch\",\n      \"category\": \"Electronics\",\n      \"price\": 850\n    },\n    {\n      \"name\": \"Bag\",\n      \"category\": \"Accessories\",\n      \"price\": 640\n    }\n  ],\n  \"campaigns\": [\n    {\n      \"type\": \"coupon\",\n      \"subtype\": \"percent\",\n      \"percent\": 10\n    },\n    {\n      \"type\": \"ontop\",\n      \"subtype\": \"category\",\n      \"category\": \"Clothing\",\n      \"percent\": 15\n    },\n    {\n      \"type\": \"seasonal\",\n      \"threshold\": 300,\n      \"discountPerThreshold\": 40\n    }\n  ],\n  \"customerPoints\": 100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/calculate-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"calculate-price"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
