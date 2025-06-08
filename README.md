@@ -119,26 +119,4 @@ price-calculation-api/
 
 ---
 
-## ⚙️ Example `index.js`
-
-```js
-const express = require('express');
-const cartValidation = require('./validators/cartValidation');
-
-const app = express();
-app.use(express.json());
-
-app.post('/calculate-price', (req, res) => {
-  const { error, value } = cartValidation.create(req.body);
-  if (error) return res.status(400).json({ error: error.details[0].message });
-
-  // Placeholder: your pricing logic here
-  return res.json({ message: 'Price calculated successfully', data: value });
-});
-
-app.listen(3000, () => console.log('Server running on http://localhost:3000'));
-```
-
----
-
 Let me know if you want to include response examples or test cases in the README too.
