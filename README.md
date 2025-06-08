@@ -95,9 +95,10 @@ curl --location 'http://localhost:3000/calculate-price' \
 1. Open Postman.
 2. Set the request method to **POST**.
 3. URL: `http://localhost:3000/calculate-price`
-4. Go to the **Body** tab → Select **raw** → choose **JSON**.
-5. Paste the same JSON data shown above.
-6. Hit **Send**.
+4. collection in repo Directory Name `postManCollection`
+5. Go to the **Body** tab → Select **raw** → choose **JSON**.
+6. Paste the same JSON data shown above.
+7. Hit **Send**.
 
 ---
 
